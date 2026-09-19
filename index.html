@@ -14,7 +14,7 @@
 
     <meta
         name="description"
-        content="The documented history of a 1989 Ford Fiesta XR2, originally registered F208 FRH and now becoming F16 XRT."
+        content="The documented history of a 1989 Ford Fiesta XR2, originally registered F208 FRH now registered F16 XRT."
     >
 
     <!-- Social / WhatsApp preview -->
@@ -693,7 +693,25 @@
 
         }
 
-    </style>
+    
+.archive-nav{position:static;display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:0 0 42px;background:none;border:0;backdrop-filter:none;justify-content:flex-start}
+.archive-nav a{border:1px solid #393b41;border-radius:3px;padding:10px 14px;font-size:13px;color:#eee}
+.archive-nav a:hover{border-color:var(--xr-red)}
+.archive-chapter{padding:0;margin:0 0 64px;scroll-margin-top:90px;background:none}
+.archive-chapter h3{font-size:clamp(24px,4vw,34px);margin:0 0 14px;border-left:3px solid var(--xr-red);padding-left:15px}
+.gallery{gap:22px 16px}.gallery-card{margin:0;min-width:0;background:#111317;border:1px solid #292d33;border-radius:4px;overflow:hidden}
+.gallery-item{display:block;aspect-ratio:4/3;background:#08090b;border-radius:0}.gallery-item img{display:block;object-fit:contain}
+.gallery-card figcaption{padding:15px;color:#bfc2c8;font-size:14px;line-height:1.55}
+a:focus-visible,button:focus-visible{outline:3px solid #ef7d00;outline-offset:3px}
+#photoDialog{width:100vw;max-width:100vw;height:100dvh;max-height:100dvh;margin:0;padding:65px 65px 20px;border:0;background:rgba(0,0,0,.97);color:white;overflow:auto}
+#photoDialog::backdrop{background:#000}#photoDialog[open]{display:flex;align-items:center;justify-content:center}
+#photoDialog figure{margin:0;text-align:center;max-width:100%}#viewerImage{display:block;max-height:calc(100dvh - 180px);max-width:100%;object-fit:contain;margin:auto}
+#viewerCaption{margin-top:18px;line-height:1.5}#viewerCount{color:#aaa;font-size:13px}
+#photoDialog button{position:fixed;background:#25262a;border:1px solid #666;color:white;border-radius:5px;min-width:44px;min-height:44px;font-size:32px;cursor:pointer}
+.viewer-close{top:12px;right:16px}.viewer-prev{top:48%;left:10px}.viewer-next{top:48%;right:10px}
+@media(max-width:600px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.gallery-card figcaption{padding:10px;font-size:12px}.archive-nav{gap:8px}.archive-nav a{padding:10px;font-size:12px}#photoDialog{padding:65px 48px 18px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+</style>
 </head>
 
 
@@ -1087,10 +1105,7 @@
             </p>
 
             <p>
-                A new registration,
-                <strong>F16 XRT</strong>, has now been
-                purchased and will soon be fitted to
-                the car.
+                The car now wears <strong>F16 XRT</strong>, as shown in the latest photographs. Its original registration remains central to this history.
             </p>
 
             <div class="plate-meaning">
@@ -1143,36 +1158,14 @@
         </p>
 
 
-        <div
-            class="gallery"
-            id="photoGallery"
-        ></div>
+        <nav class="archive-nav" aria-label="Photo chapters"><a href="#collection">Collection Day</a><a href="#repairs">Early Repairs</a><a href="#later">Later Years</a><a href="#present">F16 XRT — The Next Chapter</a></nav><section class="archive-chapter" id="collection" aria-labelledby="collection-title"><h3 id="collection-title">Collection Day</h3><p class="gallery-intro">The journey home and the first photographs of F208 FRH. The original sales invoice is kept alongside this opening chapter of the archive.</p><div class="gallery"><figure class="gallery-card"><a class="gallery-item" href="road.JPG" data-caption="The view from the driver’s seat on the journey home." aria-label="Open photograph: The view from the driver’s seat on the journey home."><img src="thumbs/road.jpg" alt="The view from the driver’s seat on the journey home." width="4032" height="3024" loading="lazy" decoding="async"></a><figcaption>The view from the driver’s seat on the journey home.</figcaption></figure><figure class="gallery-card"><a class="gallery-item" href="photos/photo001.JPG" data-caption="F208 FRH photographed on the driveway after dark." aria-label="Open photograph: F208 FRH photographed on the driveway after dark."><img src="thumbs/photo001.jpg" alt="F208 FRH photographed on the driveway after dark." width="3264" height="2448" loading="lazy" decoding="async"></a><figcaption>F208 FRH photographed on the driveway after dark.</figcaption></figure><figure class="gallery-card"><a class="gallery-item" href="photos/photo002.jpg" data-caption="A rear three-quarter view from the early photographs." aria-label="Open photograph: A rear three-quarter view from the early photographs."><img src="thumbs/photo002.jpg" alt="A rear three-quarter view from the early photographs." width="1024" height="768" loading="lazy" decoding="async"></a><figcaption>A rear three-quarter view from the early photographs.</figcaption></figure><figure class="gallery-card"><a class="gallery-item" href="photos/Photo003.jpg" data-caption="A front three-quarter view with the original registration." aria-label="Open photograph: A front three-quarter view with the original registration."><img src="thumbs/Photo003.jpg" alt="A front three-quarter view with the original registration." width="1024" height="768" loading="lazy" decoding="async"></a><figcaption>A front three-quarter view with the original registration.</figcaption></figure><figure class="gallery-card"><a class="gallery-item" href="photos/photo004.jpg" data-caption="The XR2’s front end, spotlights and F208 FRH number plate." aria-label="Open photograph: The XR2’s front end, spotlights and F208 FRH number plate."><img src="thumbs/photo004.jpg" alt="The XR2’s front end, spotlights and F208 FRH number plate." width="1024" height="768" loading="lazy" decoding="async"></a><figcaption>The XR2’s front end, spotlights and F208 FRH number plate.</figcaption></figure><figure class="gallery-card"><a class="gallery-item" href="photos/photo005.JPG" data-caption="The surviving Crystal Ford sales invoice from April 1989." aria-label="Open photograph: The surviving Crystal Ford sales invoice from April 1989."><img src="thumbs/photo005.jpg" alt="The surviving Crystal Ford sales invoice from April 1989." width="1136" height="852" loading="lazy" decoding="async"></a><figcaption>The surviving Crystal Ford sales invoice from April 1989.</figcaption></figure><figure class="gallery-card"><a class="gallery-item" href="photos/photo006.JPG" data-caption="An early wash on the driveway." aria-label="Open photograph: An early wash on the driveway."><img src="thumbs/photo006.jpg" alt="An early wash on the driveway." width="3264" height="2448" loading="lazy" decoding="async"></a><figcaption>An early wash on the driveway.</figcaption></figure></div></section><section class="archive-chapter" id="repairs" aria-labelledby="repairs-title"><h3 id="repairs-title">Early Repairs</h3><p class="gallery-intro">The early bodywork record: close-ups of the affected areas, workshop photographs and the car on the ramp. Original screenshots are retained as part of the record.</p><div class="gallery"><figure class="gallery-card"><a class="gallery-item" href="photos/photo008.jpg" data-caption="A close-up of the lower bodywork during repairs." aria-label="Open photograph: A close-up of the lower bodywork during repairs."><img src="thumbs/photo008.jpg" alt="A close-up of the lower bodywork during repairs." width="576" height="1024" loading="lazy" decoding="async"></a><figcaption>A close-up of the lower bodywork during repairs.</figcaption></figure><figure class="gallery-card"><a class="gallery-item" href="photos/photo009.jpg" data-caption="The sill and adjoining bodywork opened up for inspection." aria-label="Open photograph: The sill and adjoining bodywork opened up for inspection."><img src="thumbs/photo009.jpg" alt="The sill and adjoining bodywork opened up for inspection." width="576" height="1024" loading="lazy" decoding="async"></a><figcaption>The sill and adjoining bodywork opened up for inspection.</figcaption></figure><figure class="gallery-card"><a class="gallery-item" href="photos/photo010.jpg" data-caption="Another view of the exposed lower bodywork." aria-label="Open photograph: Another view of the exposed lower bodywork."><img src="thumbs/photo010.jpg" alt="Another view of the exposed lower bodywork." width="576" height="1024" loading="lazy" decoding="async"></a><figcaption>Another view of the exposed lower bodywork.</figcaption></figure><figure class="gallery-card"><a class="gallery-item" href="photos/photo011.jpg" data-caption="A saved workshop post showing the XR2 on the lift." aria-label="Open photograph: A saved workshop post showing the XR2 on the lift."><img src="thumbs/photo011.jpg" alt="A saved workshop post showing the XR2 on the lift." width="576" height="1024" loading="lazy" decoding="async"></a><figcaption>A saved workshop post showing the XR2 on the lift.</figcaption></figure><figure class="gallery-card"><a class="gallery-item" href="photos/photo012.jpg" data-caption="A side-on workshop photograph from the repair record." aria-label="Open photograph: A side-on workshop photograph from the repair record."><img src="thumbs/photo012.jpg" alt="A side-on workshop photograph from the repair record." width="576" height="1024" loading="lazy" decoding="async"></a><figcaption>A side-on workshop photograph from the repair record.</figcaption></figure><figure class="gallery-card"><a class="gallery-item" href="photos/photo013.jpg" data-caption="The XR2 on the workshop ramp with the bonnet raised." aria-label="Open photograph: The XR2 on the workshop ramp with the bonnet raised."><img src="thumbs/photo013.jpg" alt="The XR2 on the workshop ramp with the bonnet raised." width="1024" height="768" loading="lazy" decoding="async"></a><figcaption>The XR2 on the workshop ramp with the bonnet raised.</figcaption></figure></div></section><section class="archive-chapter" id="later" aria-labelledby="later-title"><h3 id="later-title">Later Years</h3><p class="gallery-intro">Continuing care, garage life and the details that preserve the car’s identity. Undated photographs are grouped by subject within this chapter.</p><div class="gallery"><figure class="gallery-card"><a class="gallery-item" href="photos/photo0014.jpg" data-caption="Old and replacement mounting brackets side by side." aria-label="Open photograph: Old and replacement mounting brackets side by side."><img src="thumbs/photo0014.jpg" alt="Old and replacement mounting brackets side by side." width="768" height="1024" loading="lazy" decoding="async"></a><figcaption>Old and replacement mounting brackets side by side.</figcaption></figure><figure class="gallery-card"><a class="gallery-item" href="photos/photo0015.jpg" data-caption="A close-up of the replacement linkage joint." aria-label="Open photograph: A close-up of the replacement linkage joint."><img src="thumbs/photo0015.jpg" alt="A close-up of the replacement linkage joint." width="1024" height="768" loading="lazy" decoding="async"></a><figcaption>A close-up of the replacement linkage joint.</figcaption></figure><figure class="gallery-card"><a class="gallery-item" href="photos/photo0016.jpg" data-caption="The linkage assembly laid out before fitting." aria-label="Open photograph: The linkage assembly laid out before fitting."><img src="thumbs/photo0016.jpg" alt="The linkage assembly laid out before fitting." width="1024" height="768" loading="lazy" decoding="async"></a><figcaption>The linkage assembly laid out before fitting.</figcaption></figure><figure class="gallery-card"><a class="gallery-item" href="photos/WhatsApp Image 2026-08-20 at 17.27.19.jpeg" data-caption="The linkage photographed in position beneath the car." aria-label="Open photograph: The linkage photographed in position beneath the car."><img src="thumbs/WhatsApp Image 2026-08-20 at 17.27.19.jpg" alt="The linkage photographed in position beneath the car." width="768" height="1024" loading="lazy" decoding="async"></a><figcaption>The linkage photographed in position beneath the car.</figcaption></figure><figure class="gallery-card"><a class="gallery-item" href="photos/photo0017.jpg" data-caption="Springs, dampers and other replacement parts laid out in the boot." aria-label="Open photograph: Springs, dampers and other replacement parts laid out in the boot."><img src="thumbs/photo0017.jpg" alt="Springs, dampers and other replacement parts laid out in the boot." width="1024" height="768" loading="lazy" decoding="async"></a><figcaption>Springs, dampers and other replacement parts laid out in the boot.</figcaption></figure><figure class="gallery-card"><a class="gallery-item" href="photos/26769090-918D-4CCE-92F2-DB045D95CB41.jpg" data-caption="Front wheel removed for work around the brake and suspension." aria-label="Open photograph: Front wheel removed for work around the brake and suspension."><img src="thumbs/26769090-918D-4CCE-92F2-DB045D95CB41.jpg" alt="Front wheel removed for work around the brake and suspension." width="1024" height="768" loading="lazy" decoding="async"></a><figcaption>Front wheel removed for work around the brake and suspension.</figcaption></figure><figure class="gallery-card"><a class="gallery-item" href="photos/photo019.jpg" data-caption="A close-up of components inside the engine bay." aria-label="Open photograph: A close-up of components inside the engine bay."><img src="thumbs/photo019.jpg" alt="A close-up of components inside the engine bay." width="1202" height="1602" loading="lazy" decoding="async"></a><figcaption>A close-up of components inside the engine bay.</figcaption></figure><figure class="gallery-card"><a class="gallery-item" href="photos/WhatsApp Image 2026-08-20 at 16.06.37.jpeg" data-caption="Two fuel pumps photographed side by side." aria-label="Open photograph: Two fuel pumps photographed side by side."><img src="thumbs/WhatsApp Image 2026-08-20 at 16.06.37.jpg" alt="Two fuel pumps photographed side by side." width="1200" height="1600" loading="lazy" decoding="async"></a><figcaption>Two fuel pumps photographed side by side.</figcaption></figure><figure class="gallery-card"><a class="gallery-item" href="photos/WhatsApp Image 2026-08-20 at 16.06.38.jpeg" data-caption="A length of flexible hose held alongside the bodywork." aria-label="Open photograph: A length of flexible hose held alongside the bodywork."><img src="thumbs/WhatsApp Image 2026-08-20 at 16.06.38.jpg" alt="A length of flexible hose held alongside the bodywork." width="1200" height="1600" loading="lazy" decoding="async"></a><figcaption>A length of flexible hose held alongside the bodywork.</figcaption></figure><figure class="gallery-card"><a class="gallery-item" href="alloys.jpeg" data-caption="Four pepperpot alloy wheels laid out in the boot." aria-label="Open photograph: Four pepperpot alloy wheels laid out in the boot."><img src="thumbs/alloys.jpg" alt="Four pepperpot alloy wheels laid out in the boot." width="480" height="640" loading="lazy" decoding="async"></a><figcaption>Four pepperpot alloy wheels laid out in the boot.</figcaption></figure><figure class="gallery-card"><a class="gallery-item" href="photos/B589EFB4-3761-46DB-9B10-CB03AD8B9927.jpg" data-caption="F208 FRH photographed from the rear three-quarter angle." aria-label="Open photograph: F208 FRH photographed from the rear three-quarter angle."><img src="thumbs/B589EFB4-3761-46DB-9B10-CB03AD8B9927.jpg" alt="F208 FRH photographed from the rear three-quarter angle." width="1024" height="768" loading="lazy" decoding="async"></a><figcaption>F208 FRH photographed from the rear three-quarter angle.</figcaption></figure><figure class="gallery-card"><a class="gallery-item" href="photos/E014F3F7-2561-4282-83EF-93FE7F1C4DAB.jpg" data-caption="A side profile of the XR2 on its pepperpot wheels." aria-label="Open photograph: A side profile of the XR2 on its pepperpot wheels."><img src="thumbs/E014F3F7-2561-4282-83EF-93FE7F1C4DAB.jpg" alt="A side profile of the XR2 on its pepperpot wheels." width="1024" height="768" loading="lazy" decoding="async"></a><figcaption>A side profile of the XR2 on its pepperpot wheels.</figcaption></figure><figure class="gallery-card"><a class="gallery-item" href="photos/2CBC4B7F-5857-4FB2-8E7F-15DFD823DAA4-2798-00000184A38E9DC7.jpg" data-caption="Back on the driveway with the original registration." aria-label="Open photograph: Back on the driveway with the original registration."><img src="thumbs/2CBC4B7F-5857-4FB2-8E7F-15DFD823DAA4-2798-00000184A38E9DC7.jpg" alt="Back on the driveway with the original registration." width="1024" height="768" loading="lazy" decoding="async"></a><figcaption>Back on the driveway with the original registration.</figcaption></figure><figure class="gallery-card"><a class="gallery-item" href="photos/CB450A29-F33D-4660-BF0B-B2014C52D6B8-2798-00000184A904F1EA.jpg" data-caption="A rear three-quarter view outside the garage." aria-label="Open photograph: A rear three-quarter view outside the garage."><img src="thumbs/CB450A29-F33D-4660-BF0B-B2014C52D6B8-2798-00000184A904F1EA.jpg" alt="A rear three-quarter view outside the garage." width="1024" height="768" loading="lazy" decoding="async"></a><figcaption>A rear three-quarter view outside the garage.</figcaption></figure><figure class="gallery-card"><a class="gallery-item" href="photos/437A9C67-42F7-456C-B660-63BFB1FF3035.jpg" data-caption="The XR2 at the garage entrance." aria-label="Open photograph: The XR2 at the garage entrance."><img src="thumbs/437A9C67-42F7-456C-B660-63BFB1FF3035.jpg" alt="The XR2 at the garage entrance." width="1024" height="768" loading="lazy" decoding="async"></a><figcaption>The XR2 at the garage entrance.</figcaption></figure><figure class="gallery-card"><a class="gallery-item" href="photos/BCB613AC-BCE9-4A00-985F-FC668ED488BF.jpg" data-caption="A rear view of the car inside the garage." aria-label="Open photograph: A rear view of the car inside the garage."><img src="thumbs/BCB613AC-BCE9-4A00-985F-FC668ED488BF.jpg" alt="A rear view of the car inside the garage." width="1024" height="768" loading="lazy" decoding="async"></a><figcaption>A rear view of the car inside the garage.</figcaption></figure><figure class="gallery-card"><a class="gallery-item" href="photos/IMG_2523.JPG" data-caption="Front bodywork and spotlights pictured in the garage." aria-label="Open photograph: Front bodywork and spotlights pictured in the garage."><img src="thumbs/IMG_2523.jpg" alt="Front bodywork and spotlights pictured in the garage." width="3264" height="2448" loading="lazy" decoding="async"></a><figcaption>Front bodywork and spotlights pictured in the garage.</figcaption></figure><figure class="gallery-card"><a class="gallery-item" href="Garage.jpeg" data-caption="The Fiesta sharing garage space with other projects." aria-label="Open photograph: The Fiesta sharing garage space with other projects."><img src="thumbs/Garage.jpg" alt="The Fiesta sharing garage space with other projects." width="640" height="480" loading="lazy" decoding="async"></a><figcaption>The Fiesta sharing garage space with other projects.</figcaption></figure><figure class="gallery-card"><a class="gallery-item" href="photos/photo020.JPG" data-caption="A later driveway photograph, still wearing F208 FRH." aria-label="Open photograph: A later driveway photograph, still wearing F208 FRH."><img src="thumbs/photo020.jpg" alt="A later driveway photograph, still wearing F208 FRH." width="3264" height="2448" loading="lazy" decoding="async"></a><figcaption>A later driveway photograph, still wearing F208 FRH.</figcaption></figure><figure class="gallery-card"><a class="gallery-item" href="photos/photo021.jpeg" data-caption="The XR2 during a wheel-cleaning session in the garage." aria-label="Open photograph: The XR2 during a wheel-cleaning session in the garage."><img src="thumbs/photo021.jpg" alt="The XR2 during a wheel-cleaning session in the garage." width="4032" height="3024" loading="lazy" decoding="async"></a><figcaption>The XR2 during a wheel-cleaning session in the garage.</figcaption></figure><figure class="gallery-card"><a class="gallery-item" href="plate.jpg" data-caption="F208 FRH number-plate and Crystal Ford dealer graphics." aria-label="Open photograph: F208 FRH number-plate and Crystal Ford dealer graphics."><img src="thumbs/plate.jpg" alt="F208 FRH number-plate and Crystal Ford dealer graphics." width="1024" height="389" loading="lazy" decoding="async"></a><figcaption>F208 FRH number-plate and Crystal Ford dealer graphics.</figcaption></figure><figure class="gallery-card"><a class="gallery-item" href="crystal.JPG" data-caption="Crystal Ford dealer artwork linking the car to its supplying dealer." aria-label="Open photograph: Crystal Ford dealer artwork linking the car to its supplying dealer."><img src="thumbs/crystal.jpg" alt="Crystal Ford dealer artwork linking the car to its supplying dealer." width="920" height="151" loading="lazy" decoding="async"></a><figcaption>Crystal Ford dealer artwork linking the car to its supplying dealer.</figcaption></figure></div></section><section class="archive-chapter" id="present" aria-labelledby="present-title"><h3 id="present-title">F16 XRT — The Next Chapter</h3><p class="gallery-intro">The latest additions to the photograph collection show F16 XRT fitted. The familiar red paintwork, black trim and pepperpot wheels carry the XR2’s story forward.</p><div class="gallery"><figure class="gallery-card"><a class="gallery-item" href="photos/WhatsApp Image 2026-08-20 at 17.19.48.jpeg" data-caption="The XR2 wearing its F16 XRT registration." aria-label="Open photograph: The XR2 wearing its F16 XRT registration."><img src="thumbs/WhatsApp Image 2026-08-20 at 17.19.48.jpg" alt="The XR2 wearing its F16 XRT registration." width="1567" height="1004" loading="lazy" decoding="async"></a><figcaption>The XR2 wearing its F16 XRT registration.</figcaption></figure><figure class="gallery-card"><a class="gallery-item" href="photos/WhatsApp Image 2026-08-22 at 08.31.06.jpeg" data-caption="A clean side profile in an indoor parking area." aria-label="Open photograph: A clean side profile in an indoor parking area."><img src="thumbs/WhatsApp Image 2026-08-22 at 08.31.06.jpg" alt="A clean side profile in an indoor parking area." width="1600" height="1200" loading="lazy" decoding="async"></a><figcaption>A clean side profile in an indoor parking area.</figcaption></figure></div></section>
 
     </div>
 
 </section>
 
 
-<div
-    class="lightbox"
-    id="lightbox"
->
-
-    <span
-        class="close-lightbox"
-        id="closeLightbox"
-    >
-        ×
-    </span>
-
-    <img
-        id="lightboxImage"
-        alt="Ford Fiesta XR2"
-    >
-
-</div>
-
-
+<dialog id="photoDialog" aria-label="Photograph viewer"><button class="viewer-close" aria-label="Close photograph">×</button><button class="viewer-prev" aria-label="Previous photograph">‹</button><figure><img id="viewerImage" alt=""><figcaption id="viewerCaption"></figcaption><p id="viewerCount" aria-live="polite"></p></figure><button class="viewer-next" aria-label="Next photograph">›</button></dialog>
 <footer> <a href="https://horridgegarage.co.uk" style="display:block;width:fit-content;max-width:100%;margin:0 auto 16px;padding:12px 18px;border:1px solid currentColor;border-radius:6px;color:inherit;text-decoration:none;font-weight:600;">&larr; Back to Horridge Garage</a>
 
     <div>
@@ -1187,327 +1180,23 @@
 </footer>
 
 
+
+
+
 <script>
-
-/*
-----------------------------------------------------
-XR2 AUTOMATIC NUMBERED PHOTO GALLERY
-
-This looks for numbered images in /photos/
-
-It accepts:
-photo001.jpg
-photo001.JPG
-photo001.jpeg
-photo001.JPEG
-
-It also temporarily supports the accidentally
-named photo0014 - photo0018 files currently
-in the GitHub folder.
-----------------------------------------------------
-*/
-
-
-const gallery =
-    document.getElementById("photoGallery");
-
-
-const extensions = [
-    "jpg",
-    "JPG",
-    "jpeg",
-    "JPEG"
-];
-
-
-/*
-How many photo numbers to look for.
-
-You currently have around 21 photographs,
-but leaving this at 150 means you can add
-future numbered photographs without editing
-the HTML.
-*/
-
-const maximumPhotoNumber = 150;
-
-
-/*
-Build possible filenames for a photo number.
-*/
-
-function possibleNames(number) {
-
-    const normalNumber =
-        String(number).padStart(3, "0");
-
-    let names = [];
-
-
-    extensions.forEach(extension => {
-
-        names.push(
-            `photos/photo${normalNumber}.${extension}`
-        );
-
-    });
-
-
-    /*
-    Temporary compatibility with:
-    photo0014
-    photo0015
-    photo0016
-    photo0017
-    photo0018
-    */
-
-    if (number >= 14 && number <= 18) {
-
-        const extraZero =
-            String(number).padStart(4, "0");
-
-        extensions.forEach(extension => {
-
-            names.push(
-                `photos/photo${extraZero}.${extension}`
-            );
-
-        });
-
-    }
-
-
-    return names;
-
-}
-
-
-/*
-Try each possible filename until
-the browser finds the actual image.
-*/
-
-function loadPhoto(number) {
-
-    const filenames =
-        possibleNames(number);
-
-    let attempt = 0;
-
-
-    function tryNext() {
-
-        if (attempt >= filenames.length) {
-            return;
-        }
-
-
-        const filename =
-            filenames[attempt];
-
-        attempt++;
-
-
-        const testImage =
-            new Image();
-
-
-        testImage.onload = function () {
-
-            addPhoto(
-                filename,
-                number
-            );
-
-        };
-
-
-        testImage.onerror = function () {
-
-            tryNext();
-
-        };
-
-
-        testImage.src = filename;
-
-    }
-
-
-    tryNext();
-
-}
-
-
-/*
-Add a successfully found photograph
-to the gallery.
-*/
-
-function addPhoto(
-    filename,
-    number
-) {
-
-    const item =
-        document.createElement("div");
-
-    item.className =
-        "gallery-item";
-
-    item.dataset.number =
-        number;
-
-
-    const image =
-        document.createElement("img");
-
-    image.src =
-        filename;
-
-    image.alt =
-        `Ford Fiesta XR2 photo ${number}`;
-
-    image.loading =
-        "lazy";
-
-
-    item.appendChild(image);
-
-
-    item.addEventListener(
-        "click",
-        function () {
-
-            openLightbox(filename);
-
-        }
-    );
-
-
-    gallery.appendChild(item);
-
-
-    /*
-    Keep the gallery in numerical order
-    even though different image files may
-    load at different speeds.
-    */
-
-    const items =
-        Array.from(
-            gallery.children
-        );
-
-
-    items.sort(
-        (a, b) =>
-            Number(a.dataset.number) -
-            Number(b.dataset.number)
-    );
-
-
-    items.forEach(item =>
-        gallery.appendChild(item)
-    );
-
-}
-
-
-/*
-Search for all numbered photographs.
-*/
-
-for (
-    let number = 1;
-    number <= maximumPhotoNumber;
-    number++
-) {
-
-    loadPhoto(number);
-
-}
-
-
-/*
-----------------------------------------------------
-LIGHTBOX
-----------------------------------------------------
-*/
-
-const lightbox =
-    document.getElementById("lightbox");
-
-const lightboxImage =
-    document.getElementById("lightboxImage");
-
-const closeLightbox =
-    document.getElementById("closeLightbox");
-
-
-function openLightbox(filename) {
-
-    lightboxImage.src =
-        filename;
-
-    lightbox.classList.add(
-        "active"
-    );
-
-    document.body.style.overflow =
-        "hidden";
-
-}
-
-
-function closePhoto() {
-
-    lightbox.classList.remove(
-        "active"
-    );
-
-    document.body.style.overflow =
-        "";
-
-}
-
-
-closeLightbox.addEventListener(
-    "click",
-    closePhoto
-);
-
-
-lightbox.addEventListener(
-    "click",
-    function(event) {
-
-        if (event.target === lightbox) {
-
-            closePhoto();
-
-        }
-
-    }
-);
-
-
-document.addEventListener(
-    "keydown",
-    function(event) {
-
-        if (event.key === "Escape") {
-
-            closePhoto();
-
-        }
-
-    }
-);
-
-</script>
-
-
-</body>
+const photos=Array.from(document.querySelectorAll('.gallery-item'));
+const dialog=document.querySelector('#photoDialog');
+const image=document.querySelector('#viewerImage');
+let current=0,opener=null,touchStart=null;
+function showPhoto(index){current=(index+photos.length)%photos.length;const item=photos[current];image.src=item.getAttribute('href');image.alt=item.dataset.caption;document.querySelector('#viewerCaption').textContent=item.dataset.caption;document.querySelector('#viewerCount').textContent=`${current+1} / ${photos.length}`;}
+photos.forEach((item,index)=>item.addEventListener('click',event=>{event.preventDefault();opener=item;showPhoto(index);dialog.showModal();document.body.style.overflow='hidden';document.querySelector('.viewer-close').focus();}));
+document.querySelector('.viewer-close').addEventListener('click',()=>dialog.close());
+document.querySelector('.viewer-prev').addEventListener('click',()=>showPhoto(current-1));
+document.querySelector('.viewer-next').addEventListener('click',()=>showPhoto(current+1));
+dialog.addEventListener('close',()=>{document.body.style.overflow='';opener?.focus();});
+dialog.addEventListener('click',event=>{if(event.target===dialog)dialog.close();});
+dialog.addEventListener('keydown',event=>{if(event.key==='ArrowRight'){event.preventDefault();showPhoto(current+1);}if(event.key==='ArrowLeft'){event.preventDefault();showPhoto(current-1);}});
+image.addEventListener('touchstart',event=>{touchStart=event.changedTouches[0].clientX;},{passive:true});
+image.addEventListener('touchend',event=>{if(touchStart!==null){const delta=event.changedTouches[0].clientX-touchStart;if(Math.abs(delta)>50)showPhoto(current+(delta<0?1:-1));touchStart=null;}},{passive:true});
+</script></body>
 </html>
